@@ -1,7 +1,7 @@
 #ifndef ENCRYPTION_H
 #define ENCRYPTION_H
 
-void encrypt(const char *input, char *output, int key);
-void decrypt(const char *input, char *output, int key);
+FILE* encryptfirst(FILE *firsthalf, int length,const char *output_file);
+FILE* decryptfirst(FILE *firsthalf, int length,const char *output_file);
 
 #endif // ENCRYPTION_H
